@@ -5028,6 +5028,19 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "StackTraceForums.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.All": "2.0.9"
+        },
+        "compile": {
+          "bin/placeholder/StackTraceForums.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StackTraceForums.Data.dll": {}
+        }
       }
     }
   },
@@ -13633,6 +13646,11 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "StackTraceForums.Data/1.0.0": {
+      "type": "project",
+      "path": "../StackTraceForums.Data/StackTraceForums.Data.csproj",
+      "msbuildProject": "../StackTraceForums.Data/StackTraceForums.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -13640,7 +13658,8 @@
       "Microsoft.AspNetCore.All >= 2.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 2.0.3",
       "Microsoft.NETCore.App >= 2.0.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.4"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.4",
+      "StackTraceForums.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13672,7 +13691,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\StackTraceForums.Data.csproj": {
+              "projectPath": "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\StackTraceForums.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
