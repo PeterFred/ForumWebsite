@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using StackTraceForums.Data.Models;
+using StackTraceForums.Data;
 
-namespace StackTraceForum.Data
+namespace StackTraceForums.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

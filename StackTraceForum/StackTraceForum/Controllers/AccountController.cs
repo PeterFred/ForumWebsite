@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using StackTraceForum.Models.AccountViewModels;
 using StackTraceForum.Services;
-using StackTraceForums.Data.Models;
+using StackTraceForums.Data;
 
 namespace StackTraceForum.Controllers
 {

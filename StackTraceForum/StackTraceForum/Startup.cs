@@ -4,9 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using StackTraceForum.Data;
+using StackTraceForums.Data;
 using StackTraceForum.Services;
-using StackTraceForums.Data.Models;
 
 namespace StackTraceForum
 {

@@ -1,0 +1,11 @@
+C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForums.Service\obj\Debug\netcoreapp3.0\StackTraceForums.Service.csprojAssemblyReference.cache
+C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForums.Service\obj\Debug\netcoreapp3.0\StackTraceForums.Service.AssemblyInfoInputs.cache
+C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForums.Service\obj\Debug\netcoreapp3.0\StackTraceForums.Service.AssemblyInfo.cs
+C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForums.Service\bin\Debug\netcoreapp3.0\StackTraceForums.Service.deps.json
+C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForums.Service\bin\Debug\netcoreapp3.0\StackTraceForums.Service.dll
+C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForums.Service\bin\Debug\netcoreapp3.0\StackTraceForums.Service.pdb
+C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForums.Service\bin\Debug\netcoreapp3.0\StackTraceForums.Data.dll
+C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForums.Service\bin\Debug\netcoreapp3.0\StackTraceForums.Data.pdb
+C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForums.Service\obj\Debug\netcoreapp3.0\StackTraceForums.Service.csproj.CopyComplete
+C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForums.Service\obj\Debug\netcoreapp3.0\StackTraceForums.Service.dll
+C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForums.Service\obj\Debug\netcoreapp3.0\StackTraceForums.Service.pdb

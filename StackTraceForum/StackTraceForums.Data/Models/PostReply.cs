@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StackTraceForums.Data.Models
+namespace StackTraceForums.Data
 {
     public class PostReply
     {
