@@ -27,7 +27,7 @@ namespace StackTraceForum.Controllers
             //Forums retrieves all objects from the database using GetAll()
             //Select uses Linq to map the properties on each Forum object into 
             //instances of the new forum listing model
-            IEnumerable<ForumListingModel> forums = _forumService.GetAll()
+            IEnumerable<ForumListingModel> forums = _forumService.GetAll() //From the service layer
                 .Select(forum => new ForumListingModel
                 {
                     Id = forum.Id,
@@ -38,9 +38,11 @@ namespace StackTraceForum.Controllers
             //Creates a collection of Forums
             var model = new ForumIndexModel
             {
-                ForumList = forums
+                ForumList = forums //Populated from the above service layer
         };
-
+            //The entrie wrapped forum index model is passed to the view,
+            //and accessed in the Views/Forum/Index.cshtml by the first line in razor
+            //MVC will look for a View called Index, in a folder called Forum
             return View(model);
         }
     }
