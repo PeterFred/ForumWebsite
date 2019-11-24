@@ -1,4 +1,4 @@
-﻿@model StackTraceForum.Models.Forum.ForumIndexModel
+﻿@model Forum.Web.Models.Forum.ForumIndexModel
 
 <h1>Forums</h1>
 
@@ -8,7 +8,10 @@
         {
             <tr>
                 <td>
-                    @forum.Name
+                    <a asp-controller="Forum" asp-action-"Topic" asp-route-id="@forum.Id">
+                        @forum.Name
+                    </a>
+
                 </td>
                 <td>
                     @forum.Description

@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Forum.Data.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using StackTraceForums.Data;
 
-namespace StackTraceForums.Data
+namespace Forum.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
@@ -12,7 +12,7 @@ namespace StackTraceForums.Data
         }
 
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
-        public DbSet<Forum> Forums { get; set; }
+        public DbSet<Models.Forum> Forums { get; set; }
         public DbSet<Post> Posts { get; set; }
         public DbSet<PostReply> PostReplies { get; set; }
 

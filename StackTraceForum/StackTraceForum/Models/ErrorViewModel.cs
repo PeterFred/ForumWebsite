@@ -1,6 +1,6 @@
 using System;
 
-namespace StackTraceForum.Models
+namespace Forum.Web.Models
 {
     public class ErrorViewModel
     {

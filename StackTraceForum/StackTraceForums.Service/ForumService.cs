@@ -1,12 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using StackTraceForums.Data;
-//using StackTraceForums.Data.Interfaces;
-//using StackTraceForums.Data.Models;
+using Forum.Data;
+using Forum.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace StackTraceForum.Service
+namespace Forum.Service
 {
     public class ForumService : IForum
     {
@@ -17,7 +16,7 @@ namespace StackTraceForum.Service
             _context = context;
         }
 
-        public Task Create(Forum forum)
+        public Task Create(Data.Models.Forum forum)
         {
             throw new NotImplementedException();
         }
@@ -27,7 +26,7 @@ namespace StackTraceForum.Service
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Forum> GetAll()
+        public IEnumerable<Data.Models.Forum> GetAll()
         {
             return _context.Forums
                 .Include(f => f.Posts);
@@ -38,7 +37,7 @@ namespace StackTraceForum.Service
             throw new NotImplementedException();
         }
 
-        public Forum GetById(int id)
+        public Data.Models.Forum GetById(int id)
         {
             throw new NotImplementedException();
         }

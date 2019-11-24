@@ -1,9 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using System;
-using System.Collections.Generic;
 
-namespace StackTraceForums.Data.Migrations
+namespace Forum.Data.Migrations
 {
     public partial class Addinitialentitymodels : Migration
     {

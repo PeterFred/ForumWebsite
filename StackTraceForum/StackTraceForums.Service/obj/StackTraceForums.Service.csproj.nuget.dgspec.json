@@ -4,12 +4,12 @@
     "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Service\\StackTraceForums.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\StackTraceForums.Data.csproj": {
+    "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\Forum.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\StackTraceForums.Data.csproj",
-        "projectName": "StackTraceForums.Data",
-        "projectPath": "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\StackTraceForums.Data.csproj",
+        "projectUniqueName": "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\Forum.Data.csproj",
+        "projectName": "Forum.Data",
+        "projectPath": "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\Forum.Data.csproj",
         "packagesPath": "C:\\Users\\peter.LINCOLN\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\obj\\",
         "projectStyle": "PackageReference",
@@ -98,8 +98,8 @@
         "frameworks": {
           "netcoreapp2.0": {
             "projectReferences": {
-              "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\StackTraceForums.Data.csproj": {
-                "projectPath": "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\StackTraceForums.Data.csproj"
+              "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\Forum.Data.csproj": {
+                "projectPath": "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\Forum.Data.csproj"
               }
             }
           }

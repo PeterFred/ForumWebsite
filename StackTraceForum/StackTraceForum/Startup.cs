@@ -4,9 +4,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using StackTraceForums.Data;
-using StackTraceForum.Services;
-using StackTraceForum.Service;
+using Forum.Data;
+using Forum.Data.Models;
+using Forum.Web.Services;
+using Forum.Service;
 
 namespace StackTraceForum
 {
@@ -32,6 +33,8 @@ namespace StackTraceForum
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 
+            //Anytime a class (ControllerClass) asks for an implmentation of specified interface (IForum),
+            //then use the defined startup Service (ForumService)
             services.AddScoped<IForum, ForumService>();
 
             services.AddMvc();

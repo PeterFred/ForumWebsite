@@ -19,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StackTraceForums.Data\StackTraceForums.Data.csproj" />
-    <ProjectReference Include="..\StackTraceForums.Service\StackTraceForums.Service.csproj" />
+    <ProjectReference Include="..\StackTraceForums.Data\Forum.Data.csproj" />
+    <ProjectReference Include="..\StackTraceForums.Service\Forum.Service.csproj" />
   </ItemGroup>
 
 </Project>

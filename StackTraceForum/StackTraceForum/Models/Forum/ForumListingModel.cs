@@ -1,4 +1,4 @@
-﻿namespace StackTraceForum.Models
+﻿namespace Forum.Web.Models.Forum
 {
     public class ForumListingModel
     {

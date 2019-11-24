@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StackTraceForums.Data\StackTraceForums.Data.csproj" />
+    <ProjectReference Include="..\StackTraceForums.Data\Forum.Data.csproj" />
   </ItemGroup>
 
 </Project>

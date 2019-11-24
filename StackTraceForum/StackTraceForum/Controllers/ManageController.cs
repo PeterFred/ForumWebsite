@@ -8,11 +8,12 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using StackTraceForum.Models.ManageViewModels;
-using StackTraceForum.Services;
-using StackTraceForums.Data;
+using Forum.Data.Models;
+using Forum.Web.Services;
+using Forum.Web.Models.ManageViewModels;
+using Forum.Web.Models;
 
-namespace StackTraceForum.Controllers
+namespace Forum.Web.Controllers
 {
     [Authorize]
     [Route("[controller]/[action]")]

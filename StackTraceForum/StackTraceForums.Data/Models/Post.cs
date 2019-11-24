@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace StackTraceForums.Data
+namespace Forum.Data.Models
 {
     public class Post
     {

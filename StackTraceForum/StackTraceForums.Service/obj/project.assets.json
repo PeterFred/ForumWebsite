@@ -4735,17 +4735,17 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "StackTraceForums.Data/1.0.0": {
+      "Forum.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.9"
         },
         "compile": {
-          "bin/placeholder/StackTraceForums.Data.dll": {}
+          "bin/placeholder/Forum.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/StackTraceForums.Data.dll": {}
+          "bin/placeholder/Forum.Data.dll": {}
         }
       }
     }
@@ -12993,16 +12993,16 @@
         "windowsazure.storage.nuspec"
       ]
     },
-    "StackTraceForums.Data/1.0.0": {
+    "Forum.Data/1.0.0": {
       "type": "project",
-      "path": "../StackTraceForums.Data/StackTraceForums.Data.csproj",
-      "msbuildProject": "../StackTraceForums.Data/StackTraceForums.Data.csproj"
+      "path": "../StackTraceForums.Data/Forum.Data.csproj",
+      "msbuildProject": "../StackTraceForums.Data/Forum.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Microsoft.NETCore.App >= 2.0.0",
-      "StackTraceForums.Data >= 1.0.0"
+      "Forum.Data >= 1.0.0",
+      "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
   "packageFolders": {
@@ -13012,9 +13012,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Service\\StackTraceForums.Service.csproj",
-      "projectName": "StackTraceForums.Service",
-      "projectPath": "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Service\\StackTraceForums.Service.csproj",
+      "projectUniqueName": "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Service\\Forum.Service.csproj",
+      "projectName": "Forum.Service",
+      "projectPath": "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Service\\Forum.Service.csproj",
       "packagesPath": "C:\\Users\\peter.LINCOLN\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Service\\obj\\",
       "projectStyle": "PackageReference",
@@ -13035,8 +13035,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\StackTraceForums.Data.csproj": {
-              "projectPath": "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\StackTraceForums.Data.csproj"
+            "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\Forum.Data.csproj": {
+              "projectPath": "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\Forum.Data.csproj"
             }
           }
         }

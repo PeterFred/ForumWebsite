@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
-using StackTraceForum.Services;
+using Forum.Web.Services;
 
-namespace StackTraceForum.Services
+namespace Forum.Web.Models
 {
     public static class EmailSenderExtensions
     {
