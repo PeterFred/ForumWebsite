@@ -14,6 +14,8 @@ namespace Forum.Web.Controllers
         // services.AddScoped<IForum, ForumService>();
         private readonly IForum _forumService;
 
+        private readonly IPost _postService;
+
         public ForumController(IForum forumService)
         {
             _forumService = forumService;
@@ -57,7 +59,9 @@ namespace Forum.Web.Controllers
         {
             var forum = _forumService.GetById(id);
 
+            var posts = _postService.GetFilteredPosts(id);
 
+            var postListings = new 
 
             return View();
         }
