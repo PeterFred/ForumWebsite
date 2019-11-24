@@ -1,4 +1,5 @@
-﻿using Forum.Web.Models.Post;
+﻿using Forum.Web.Models.Forum;
+using Forum.Web.Models.Post;
 using System.Collections.Generic;
 
 namespace Forum.Web.Models

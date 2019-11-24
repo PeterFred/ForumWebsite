@@ -85,7 +85,7 @@ namespace Forum.Web.Controllers
                 Forum = BuildForumListing(forum)
             };
            
-            return View();
+            return View(model);
         }
 
         private ForumListingModel BuildForumListing(Post post)
