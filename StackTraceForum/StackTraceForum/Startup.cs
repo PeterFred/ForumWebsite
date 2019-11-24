@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using StackTraceForums.Data;
 using StackTraceForum.Services;
+using StackTraceForum.Service;
 
 namespace StackTraceForum
 {
@@ -30,6 +31,8 @@ namespace StackTraceForum
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
+
+            services.AddScoped<IForum, ForumService>();
 
             services.AddMvc();
         }

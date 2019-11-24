@@ -12,7 +12,9 @@ C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\bin\Debug\netcoreapp2.0\StackTraceForum.dll
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\bin\Debug\netcoreapp2.0\StackTraceForum.pdb
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\bin\Debug\netcoreapp2.0\StackTraceForums.Data.dll
+C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\bin\Debug\netcoreapp2.0\StackTraceForums.Service.dll
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\bin\Debug\netcoreapp2.0\StackTraceForums.Data.pdb
+C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\bin\Debug\netcoreapp2.0\StackTraceForums.Service.pdb
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\obj\Debug\netcoreapp2.0\StackTraceForum.csproj.CopyComplete
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\obj\Debug\netcoreapp2.0\StackTraceForum.dll
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\obj\Debug\netcoreapp2.0\StackTraceForum.pdb

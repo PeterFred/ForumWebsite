@@ -1,7 +1,6 @@
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForums.Data\bin\Debug\netcoreapp2.0\StackTraceForums.Data.deps.json
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForums.Data\bin\Debug\netcoreapp2.0\StackTraceForums.Data.dll
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForums.Data\bin\Debug\netcoreapp2.0\StackTraceForums.Data.pdb
-C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForums.Data\obj\Debug\netcoreapp2.0\StackTraceForums.Data.csprojAssemblyReference.cache
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForums.Data\obj\Debug\netcoreapp2.0\StackTraceForums.Data.AssemblyInfoInputs.cache
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForums.Data\obj\Debug\netcoreapp2.0\StackTraceForums.Data.AssemblyInfo.cs
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForums.Data\obj\Debug\netcoreapp2.0\StackTraceForums.Data.dll

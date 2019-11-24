@@ -5041,6 +5041,19 @@
         "runtime": {
           "bin/placeholder/StackTraceForums.Data.dll": {}
         }
+      },
+      "StackTraceForums.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "StackTraceForums.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StackTraceForums.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StackTraceForums.Service.dll": {}
+        }
       }
     }
   },
@@ -13651,6 +13664,11 @@
       "type": "project",
       "path": "../StackTraceForums.Data/StackTraceForums.Data.csproj",
       "msbuildProject": "../StackTraceForums.Data/StackTraceForums.Data.csproj"
+    },
+    "StackTraceForums.Service/1.0.0": {
+      "type": "project",
+      "path": "../StackTraceForums.Service/StackTraceForums.Service.csproj",
+      "msbuildProject": "../StackTraceForums.Service/StackTraceForums.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -13659,7 +13677,8 @@
       "Microsoft.EntityFrameworkCore.Tools >= 2.0.3",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.4",
-      "StackTraceForums.Data >= 1.0.0"
+      "StackTraceForums.Data >= 1.0.0",
+      "StackTraceForums.Service >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13694,6 +13713,9 @@
           "projectReferences": {
             "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\StackTraceForums.Data.csproj": {
               "projectPath": "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Data\\StackTraceForums.Data.csproj"
+            },
+            "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Service\\StackTraceForums.Service.csproj": {
+              "projectPath": "C:\\Users\\peter.LINCOLN\\source\\repos\\ForumWebsite\\StackTraceForum\\StackTraceForums.Service\\StackTraceForums.Service.csproj"
             }
           }
         }

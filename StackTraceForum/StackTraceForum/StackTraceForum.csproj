@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\StackTraceForums.Data\StackTraceForums.Data.csproj" />
+    <ProjectReference Include="..\StackTraceForums.Service\StackTraceForums.Service.csproj" />
   </ItemGroup>
 
 </Project>

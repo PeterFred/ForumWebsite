@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace StackTraceForums.Service
+namespace StackTraceForum.Service
 {
     public class ForumService : IForum
     {
