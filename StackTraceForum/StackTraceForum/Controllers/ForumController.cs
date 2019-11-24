@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using StackTraceForum.Models;
+using StackTraceForum.Models.Forum;
 using StackTraceForums.Data;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace StackTraceForum.Controllers
 {
@@ -21,11 +24,24 @@ namespace StackTraceForum.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<Forum> forums = _forumService.GetAll();
+            //Forums retrieves all objects from the database using GetAll()
+            //Select uses Linq to map the properties on each Forum object into 
+            //instances of the new forum listing model
+            IEnumerable<ForumListingModel> forums = _forumService.GetAll()
+                .Select(forum => new ForumListingModel
+                {
+                    Id = forum.Id,
+                    Name = forum.Title,
+                    Description = forum.Description
+                });
 
+            //Creates a collection of Forums
+            var model = new ForumIndexModel
+            {
+                ForumList = forums
+        };
 
-
-            return View();
+            return View(model);
         }
     }
 }
