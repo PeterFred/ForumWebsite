@@ -4,6 +4,10 @@ using Forum.Web.Models.Forum;
 using System.Collections.Generic;
 using System.Linq;
 using Forum.Data.Interfaces;
+using Forum.Web.Models.Post;
+using Forum.Data.Models;
+using System;
+using Forum.Web.Models;
 
 namespace Forum.Web.Controllers
 {
@@ -55,16 +59,50 @@ namespace Forum.Web.Controllers
         #endregion
     
 
-        //Return a forum identified by its primary key
+        //Return a forum and associated posts identified by its primary key
         public IActionResult Topic(int id)
         {
-            var forum = _forumService.GetById(id);
+            Data.Models.Forum forum = _forumService.GetById(id);
 
-            var posts = _postService.GetPostsbyForum(id);
+            //IEnumerable<Post> posts = _postService.GetPostsbyForum(id);
+            //Refactored:
+            IEnumerable<Post> posts = forum.Posts;
 
-            //var postListings = new 
+            var postListings = posts.Select(post => new PostListingModel
+            {
+                Id = post.Id,
+                AuthorId = post.User.Id,
+                AuthorRating = post.User.Rating,
+                Title = post.Title,
+                DatePosted = post.Created.ToString(),
+                RepliesCount = post.Replies.Count(),
+                Forum = BuildForumListing(post)
+            });
 
+            var model = new ForumTopicModel
+            {
+                Posts = postListings,
+                Forum = BuildForumListing(forum)
+            };
+           
             return View();
+        }
+
+        private ForumListingModel BuildForumListing(Post post)
+        {
+            Data.Models.Forum forum = post.Forum;
+            return BuildForumListing(forum);
+        }
+
+        private ForumListingModel BuildForumListing(Data.Models.Forum forum)
+        {
+            return new ForumListingModel
+            {
+                Id = forum.Id,
+                Name = forum.Title,
+                Description = forum.Description,
+                ImageUrl = forum.ImageUrl
+            };
         }
     }
 
