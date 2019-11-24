@@ -12,11 +12,13 @@ namespace Forum.Data.Interfaces
         Post GetById(int id);
         IEnumerable<Post> GetAll();
         IEnumerable<Post> GetFilteredPosts(string seacrhQuery);
+        IEnumerable<Post> GetPostsbyForum(int id);
 
         Task Add(Post post);
         Task Delete(int id);
         Task EditPostContent(int id, string newContent);
         
         Task AddReply(PostReply reply);
+       
     }
 }

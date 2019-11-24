@@ -3,6 +3,7 @@ using Forum.Data;
 using Forum.Web.Models.Forum;
 using System.Collections.Generic;
 using System.Linq;
+using Forum.Data.Interfaces;
 
 namespace Forum.Web.Controllers
 {
@@ -53,15 +54,15 @@ namespace Forum.Web.Controllers
         }
         #endregion
     
-        //Return a forum identified by its primary key
 
+        //Return a forum identified by its primary key
         public IActionResult Topic(int id)
         {
             var forum = _forumService.GetById(id);
 
-            var posts = _postService.GetFilteredPosts(id);
+            var posts = _postService.GetPostsbyForum(id);
 
-            var postListings = new 
+            //var postListings = new 
 
             return View();
         }
