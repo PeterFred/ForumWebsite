@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Forum.Data.Interfaces;
+using Forum.Data.Models;
 using Forum.Web.Models.Post;
+using Forum.Web.Models.Reply;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Forum.Web.Controllers
@@ -25,14 +27,36 @@ namespace Forum.Web.Controllers
 
         public IActionResult Index(int id)
         {
-            Data.Models.Post post = _postService.GetById(id);
+            Post post = _postService.GetById(id);
 
-            var model = new PostIndexModel
+            IEnumerable<PostReplyModel> replies = BuildPostReplies(post.Replies);
+
+            PostReplyModel model = new PostReplyModel
             {
-
+                Id = post.Id,
+                AuthorId = post.User.Id,
+                AuthorName = post.User.UserName,
+                AuthorImageUrl = post.User.ProfileImageUrl,
+                AuthorRating = post.User.Rating,
+                Created = post.Created,
+                ReplyContent = post.Content,
             };
 
-            return View();
+            return View(model);
+        }
+
+        private IEnumerable<PostReplyModel> BuildPostReplies(IEnumerable<PostReply> replies)
+        {
+            return replies.Select(reply => new PostReplyModel
+            {
+                Id = reply.Id,
+                AuthorName = reply.User.UserName,
+                AuthorId = reply.User.Id,
+                AuthorImageUrl = reply.User.ProfileImageUrl,
+                AuthorRating = reply.User.Rating,
+                Created = reply.Created,
+                ReplyContent = reply.Content
+            });
         }
     }
 }

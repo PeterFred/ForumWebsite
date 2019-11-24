@@ -1,6 +1,7 @@
 ﻿using Forum.Data;
 using Forum.Data.Interfaces;
 using Forum.Data.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,9 +43,16 @@ namespace Forum.Service
             throw new NotImplementedException();
         }
 
+        //Instantiated using lazy loading so needs to use include
         public Post GetById(int id)
         {
-            throw new NotImplementedException();
+            return _context.Posts
+                .Where(p => p.Id == id)
+                .Include(post => post.User)
+                .Include(post => post.Replies)
+                    .ThenInclude(reply=>reply.User)
+                .Include(post => post.Forum)
+                .First();
         }
 
         public IEnumerable<Post> GetFilteredPosts(string seacrhQuery)
