@@ -8,6 +8,7 @@ using Forum.Data;
 using Forum.Data.Models;
 using Forum.Web.Services;
 using Forum.Service;
+using Forum.Data.Interfaces;
 
 namespace StackTraceForum
 {
@@ -36,6 +37,7 @@ namespace StackTraceForum
             //Anytime a class (ControllerClass) asks for an implmentation of specified interface (IForum),
             //then use the defined startup Service (ForumService)
             services.AddScoped<IForum, ForumService>();
+            services.AddScoped<IPost, PostService>();
 
             services.AddMvc();
         }
