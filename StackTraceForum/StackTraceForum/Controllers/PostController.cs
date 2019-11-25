@@ -41,15 +41,20 @@ namespace Forum.Web.Controllers
 
             IEnumerable<PostReplyModel> replies = BuildPostReplies(post.Replies);
 
-            PostReplyModel model = new PostReplyModel
+            PostIndexModel model = new PostIndexModel
             {
                 Id = post.Id,
+                Title = post.Title,
                 AuthorId = post.User.Id,
                 AuthorName = post.User.UserName,
                 AuthorImageUrl = post.User.ProfileImageUrl,
                 AuthorRating = post.User.Rating,
                 Created = post.Created,
-                ReplyContent = post.Content,
+                PostContent = post.Content,
+                Replies = replies
+                /*,
+                ForumId = post.Forum.Id,
+                ForumName = post.Forum.Title*/
             };
 
             return View(model);
@@ -59,7 +64,7 @@ namespace Forum.Web.Controllers
         public IActionResult Create(int id)
         {
             var forum = _forumService.GetById(id);
-            NewPostModel model = new NewPostModel
+            var model = new NewPostModel
             {
                 ForumName = forum.Title,
                 ForumId = forum.Id,
@@ -70,19 +75,20 @@ namespace Forum.Web.Controllers
             return View(model);
         }
 
-        //Forms with post method will trigger here
+        //Forms with post method will trigger here (from create.cshtml)
         //Taking info from the user in the form of a viewmodel, 
         //then transform into an entity model that EntityFramework can push into the db
         [HttpPost]
         public async Task<IActionResult> AddPost(NewPostModel model)
         {
+
             string userId = _userManager.GetUserId(User);
-            var user = await _userManager.FindByIdAsync(userId); //Async task requires await
+            ApplicationUser user = _userManager.FindByIdAsync(userId).Result; //Async task requires await
 
-            var post = BuildPost(model, user);
+            Post post = BuildPost(model, user);
 
-            await _postService.Add(post);
-            return RedirectToAction("Index", "Post", post.Id);
+            await _postService.Add(post); //Adds to db Wait blocks the current thread until the task is complete
+            return RedirectToAction("Index", "Post", new { id = post.Id });
         }
 
         //Takes user entered data and converts to db acceptable data
@@ -90,6 +96,7 @@ namespace Forum.Web.Controllers
         public Post BuildPost(NewPostModel post, ApplicationUser user)
         {
             var now = DateTime.Now;
+            //Get current forumId
             var forum = _forumService.GetById(post.ForumId);
 
             return new Post
