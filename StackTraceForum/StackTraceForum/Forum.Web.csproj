@@ -23,4 +23,9 @@
     <ProjectReference Include="..\StackTraceForums.Service\Forum.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\forum\" />
+    <Folder Include="wwwroot\images\users\" />
+  </ItemGroup>
+
 </Project>
