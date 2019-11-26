@@ -15,6 +15,9 @@ namespace Forum.Web.Models.Post
         public DateTime Created { get; set; }
         public string PostContent { get; set; }
 
+        public int ForumId { get; set; }
+        public string ForumName { get; set; }
+
         //Stacks replies on a post
         public IEnumerable<PostReplyModel> Replies { get; set; }
 
