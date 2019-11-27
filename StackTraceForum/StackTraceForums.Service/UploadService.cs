@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Forum.Data.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Forum.Service
 {
-    class UploadService
+    public class UploadService : IUpload
     {
     }
 }
