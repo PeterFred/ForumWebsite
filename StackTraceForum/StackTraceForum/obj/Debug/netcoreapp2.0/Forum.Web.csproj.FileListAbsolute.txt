@@ -12,9 +12,10 @@ C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\bin\Debug\netcoreapp2.0\Forum.Data.pdb
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\bin\Debug\netcoreapp2.0\Forum.Service.pdb
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\obj\Debug\netcoreapp2.0\Forum.Web.csprojAssemblyReference.cache
-C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\obj\Debug\netcoreapp2.0\Forum.Web.AssemblyInfoInputs.cache
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\obj\Debug\netcoreapp2.0\Forum.Web.AssemblyInfo.cs
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\obj\Debug\netcoreapp2.0\Forum.Web.csproj.CopyComplete
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\obj\Debug\netcoreapp2.0\Forum.Web.dll
 C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\obj\Debug\netcoreapp2.0\Forum.Web.pdb
+C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\bin\Debug\netcoreapp2.0\storageSettings.json
+C:\Users\peter.LINCOLN\source\repos\ForumWebsite\StackTraceForum\StackTraceForum\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs

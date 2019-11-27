@@ -1,0 +1,6 @@
+//This is to connect to Azure for the user images
+{
+  "ConnectionStrings": {
+    "AzureStorageAccount": "DefaultEndpointsProtocol=https;AccountName=stacktraceblob;AccountKey=nL7fOcrJtD+72+n3Q+MLeF5DULwU4jdGe56us3mJOZIDyAsCW+7tDnp47tnaN+ZXbKC9fN1hD3e2uaGHmu8mXw==;EndpointSuffix=core.windows.net"
+  }
+}
