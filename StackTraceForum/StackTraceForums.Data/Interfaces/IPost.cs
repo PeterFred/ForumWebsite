@@ -11,7 +11,7 @@ namespace Forum.Data.Interfaces
     {
         Post GetById(int id);
         IEnumerable<Post> GetAll();
-        IEnumerable<Post> GetFilteredPosts(string seacrhQuery);
+        IEnumerable<Post> GetFilteredPosts(Data.Models.Forum forum, string seacrhQuery);
         IEnumerable<Post> GetPostsbyForum(int id);
         IEnumerable<Post> GetLatestPosts(int n);
 

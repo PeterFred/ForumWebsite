@@ -60,9 +60,19 @@ namespace Forum.Service
                 .First();
         }
 
-        public IEnumerable<Post> GetFilteredPosts(string seacrhQuery)
+        /*Gets called from ForumController.
+         * Get the forum for the particular topic (using Entyity Framework to find it by id),
+         * then return matching posts (title or content) using where
+         */
+        public IEnumerable<Post> GetFilteredPosts(Data.Models.Forum forum, string searchQuery)
         {
-            throw new NotImplementedException();
+
+            //Check if string is null, in which case return all posts, otherwise filtered posts
+            return String.IsNullOrEmpty(searchQuery)
+                ?forum.Posts
+                : forum.Posts.Where(post => 
+                        post.Title.Contains(searchQuery)
+                        || post.Content.Contains(searchQuery));
         }
 
         public IEnumerable<Post> GetLatestPosts(int n)

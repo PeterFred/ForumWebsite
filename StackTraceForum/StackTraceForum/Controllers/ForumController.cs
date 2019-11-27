@@ -18,12 +18,13 @@ namespace Forum.Web.Controllers
         //Make sure service is registered in startup.cs
         // services.AddScoped<IForum, ForumService>();
         private readonly IForum _forumService;
-
         private readonly IPost _postService;
 
-        public ForumController(IForum forumService)
+        public ForumController(IForum forumService, IPost postService)
         {
             _forumService = forumService;
+            _postService = postService;
+
         }
 
 
@@ -57,16 +58,23 @@ namespace Forum.Web.Controllers
             return View(model);
         }
         #endregion
-    
 
+        #region TopicController
         //Return a forum and associated posts identified by its primary key
-        public IActionResult Topic(int id)
+        public IActionResult Topic(int id, string searchQuery)
         {
             Data.Models.Forum forum = _forumService.GetById(id);
+            IEnumerable<Post> posts = new List<Post>();
+
 
             //IEnumerable<Post> posts = _postService.GetPostsbyForum(id);
             //Refactored:
-            IEnumerable<Post> posts = forum.Posts;
+            //Get all the posts from the forum, then enumerate them to a list,
+            //Then provide them to the viewModel
+            //Nb nullOrEmpty strings checked in method
+
+            posts = _postService.GetFilteredPosts(forum, searchQuery).ToList();
+
 
             var postListings = posts.Select(post => new PostListingModel
             {
@@ -89,6 +97,24 @@ namespace Forum.Web.Controllers
             return View(model);
         }
 
+        #endregion
+
+
+        /**
+         * Return the same forum post back, but containing posts 
+         * that correspond to the seacrh query of that forum.
+         * Therefore, new model not required, but can utilise TopiCController
+         * to return all the posts, or a filtered list.
+         * SO, acts like a wrapper to redirect to the TopicController
+         */
+        [HttpPost]
+        public IActionResult Search(int id, string searchQuery)
+        {
+            return RedirectToAction("Topic", new { id, searchQuery });
+        }
+
+        #region PrivateFunctions
+
         private ForumListingModel BuildForumListing(Post post)
         {
             Data.Models.Forum forum = post.Forum;
@@ -105,6 +131,8 @@ namespace Forum.Web.Controllers
                 ImageUrl = forum.ImageUrl
             };
         }
+
+        #endregion
     }
 
 
