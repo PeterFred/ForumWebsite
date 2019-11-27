@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Forum.Data.Interfaces
 {
-    interface IUpload
+    public interface IUpload
     {
     }
 }

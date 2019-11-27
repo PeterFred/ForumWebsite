@@ -1,10 +1,17 @@
-﻿using System;
+﻿using Forum.Data.Models;
+using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
 
 namespace Forum.Data.Interfaces
 {
-    interface IApplicationUser
+    public interface IApplicationUser
     {
+        ApplicationUser GetById(string id);
+        IEnumerable<ApplicationUser> GetAll();
+
+        Task IncrementRating(string id);
+        Task Add(ApplicationUser user);
+        Task SetProfileImage(string id, Uri uri);
     }
 }

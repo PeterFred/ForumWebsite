@@ -1,5 +1,6 @@
 ﻿using Forum.Data.Interfaces;
 using Forum.Data.Models;
+using Forum.Web.Models.ApplicationUser;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -22,7 +23,10 @@ namespace Forum.Web.Controllers
         [Authorize]
         public IActionResult Detail(string id)
         {
-           
+            var user = _userService.GetById(id);
+            var userRoles = _userManager.GetRolesAsync(user).Result;
+
+
 
             return View(model);
         }
