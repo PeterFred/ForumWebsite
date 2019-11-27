@@ -40,9 +40,11 @@ namespace Forum.Web.Controllers
             var model = new SearchResultModel
             {
                 Posts = postListings,
-                Searchquery = searchQuery,
+                SearchQuery = searchQuery,
                 EmptySearchResults = areNoResults
             };
+
+            return View(model);
         }
 
         private ForumListingModel BuildForumListing(Post post)
