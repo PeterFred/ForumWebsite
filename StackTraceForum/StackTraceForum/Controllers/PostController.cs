@@ -53,11 +53,14 @@ namespace Forum.Web.Controllers
                 PostContent = post.Content,
                 Replies = replies,
                 ForumId = post.Forum.Id,
-                ForumName = post.Forum.Title
+                ForumName = post.Forum.Title,
+                IsAuthorAdmin = IsAuthorAdmin(post.User)
             };
 
             return View(model);
         }
+
+
 
         //Note id is Forum.id
         public IActionResult Create(int id)
@@ -108,6 +111,16 @@ namespace Forum.Web.Controllers
             };
         }
 
+        /**
+         * Check to see if user is an admin or not (for PostIndexModel / PostReplyModel)
+         * Uses async method on ASP 
+         */
+        private bool IsAuthorAdmin(ApplicationUser user)
+        {
+            return _userManager.GetRolesAsync(user)
+                .Result.Contains("Admin");
+        }
+
         private IEnumerable<PostReplyModel> BuildPostReplies(IEnumerable<PostReply> replies)
         {
             return replies.Select(reply => new PostReplyModel
@@ -118,7 +131,8 @@ namespace Forum.Web.Controllers
                 AuthorImageUrl = reply.User.ProfileImageUrl,
                 AuthorRating = reply.User.Rating,
                 Created = reply.Created,
-                ReplyContent = reply.Content
+                ReplyContent = reply.Content,
+                IsAuthorAdmin = IsAuthorAdmin(reply.User)
             });
         }
     }

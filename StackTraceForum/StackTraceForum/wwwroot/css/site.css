@@ -1,5 +1,5 @@
 ﻿body {
-    padding: 50px 0 20px 0;
+    padding: 50px 0 20px 60px;
     background-image: url("/images/theme/bg-01.png");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -157,10 +157,125 @@
     background-color: #ddd;
 }
 
+.postAuthorImage{
+    height: 80px;
+    width: 80px;
+    background-size: 100%;
+}
+
+.postAuthorContainer{
+    padding: 12px;
+    color: #444;
+    font-family: 'Roboto';
+    width: 190px;
+}
+
+.postIndex{
+    font-size: 1.4em;
+}
+
+.postContentContainer{
+    font-family: 'Roboto';
+    color: #222;
+    padding: 22px;
+    border-left: 1px solid #ddd;
+}
+
+.postAuthorRating{
+    font-size: 0.9em;
+    color: #159;
+    font-family: 'Roboto-Mono';
+}
+
+#postIndexContent{
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.3);
+
+}
+
+.postHeader{
+    background-color: #212121;
+    padding: 8px 0 24px 24px;
+}
+
+#headingBtn{
+    float: right;
+    margin-right: 20px;
+}
+
+
+/*Custom Buttons*/
+.btn-back{
+    background-color: #555;
+    color: #fff !important;
+    transition: ease-in 0.1s;
+    border-radius: 0px !important;
+}
+
+.btn-back:hover{
+    transition: ease-in: 0.1s;
+    background-color: #1E88E5 !important;
+}
+
+.btn-newReply{
+    background-color: #555;
+    color: #fff !important;
+    transition: ease-in 0.1s;
+    border-radius: 0px !important;
+}
+
+.btn-newReply:hover {
+    transition: ease-in: 0.1s;
+    background-color: #1E88E5 !important;
+}
+
+.btn-file {
+    background-color: #555;
+    color: #fff !important;
+    transition: ease-in 0.1s;
+    border-radius: 0px !important;
+}
+
+.btn-file:hover {
+    transition: ease-in: 0.1s;
+    background-color: #1E88E5 !important;
+}
+
+.btn-newPost {
+    background-color: #555;
+    color: #fff !important;
+    transition: ease-in 0.1s;
+    border-radius: 0px !important;
+}
+
+.btn-newPost:hover {
+    transition: ease-in: 0.1s;
+    background-color: #1E88E5 !important;
+}
+
+.btn-submitPost {
+    background-color: #555;
+    color: #fff !important;
+    transition: ease-in 0.1s;
+    border-radius: 0px !important;
+}
+
+.btn-submitPost:hover {
+    transition: ease-in: 0.1s;
+    background-color: #1E88E5 !important;
+}
+
+
+
+
+
+
 /* Forum index*/
 #forumIndexTable td {
     background-color: rgba(255, 255, 255, 0.9);
 }
+
+
 
 #forumIndexTable tr:hover {
     background-color: rgba(0, 116, 238, 1);
