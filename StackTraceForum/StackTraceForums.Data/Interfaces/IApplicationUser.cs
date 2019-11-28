@@ -12,6 +12,8 @@ namespace Forum.Data.Interfaces
 
         Task IncrementRating(string id);
         Task Add(ApplicationUser user);
+        Task Deactivate(ApplicationUser user);
         Task SetProfileImage(string id, Uri uri);
+        Task BumpRating(string userId, Type type);
     }
 }
